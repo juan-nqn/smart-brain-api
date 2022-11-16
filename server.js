@@ -11,7 +11,7 @@ const image = require('./controllers/image');
 const juan = knex ({
     client: 'pg',
     connection: {
-      host : 'juan://juan:mXI4Vl80Wi2z4gvee064SkX8Z9jFgoVZ@dpg-cdqfr6qrrk09t4bf8vrg-a/smartbrain_ytzt',
+      host : 'postgres://juan:mXI4Vl80Wi2z4gvee064SkX8Z9jFgoVZ@dpg-cdqfr6qrrk09t4bf8vrg-a/smartbrain_ytzt',
       port : 5432,
       user : 'juan',
       password : 'mXI4Vl80Wi2z4gvee064SkX8Z9jFgoVZ',
