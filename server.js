@@ -11,7 +11,7 @@ const image = require('./controllers/image');
 const juan = knex ({
     client: 'pg',
     connection: {
-      host : 'postgres://juan:mXI4Vl80Wi2z4gvee064SkX8Z9jFgoVZ@dpg-cdqfr6qrrk09t4bf8vrg-a/smartbrain_ytzt',
+      host : 'oregon-postgres.render.com',
       port : 5432,
       user : 'juan',
       password : 'mXI4Vl80Wi2z4gvee064SkX8Z9jFgoVZ',
@@ -53,7 +53,7 @@ app.put('/image', (req, res) =>  {image.handleImagePut(req, res, juan)})
 app.post('/imageurl', (req, res) =>  {image.handleApiCall(req, res)})
 ////////////////////////////////////////////////////////////////////////////
 app.listen(process.env.PORT || 3001, ()=> {
-    console.log(`app is running good bro #{process.env.PORT}`)
+    console.log(`app is running good bro ${process.env.PORT}`)
 });
 
 
