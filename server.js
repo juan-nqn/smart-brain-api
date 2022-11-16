@@ -58,7 +58,7 @@ app.use(cors());
 // }
 //root route////////////////////////////////////////////////////
 
-app.get('/', (req, res) => {res.send(database.users)})
+app.get('/', (req, res) => {res.send('it is working')})
 
 //signin//////////////////////////////////////////
 
