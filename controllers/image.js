@@ -15,9 +15,9 @@ const handleApiCall = (req, res) => {
 }
 
 
-const handleImagePut = (req, res, postgres) => {
+const handleImagePut = (req, res, juan) => {
     const { id } = req.body; 
-        postgres('users').where('id', '=', id)
+        juan('users').where('id', '=', id)
         .increment('entries', 1)
         .returning('entries')
         .then(entries => {

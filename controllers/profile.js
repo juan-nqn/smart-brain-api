@@ -1,7 +1,7 @@
-const handleProfileGet = (req, res, postgres) => {
+const handleProfileGet = (req, res, juan) => {
     const { id } = req.params;
     let found = false;
-    postgres.select('*').from('users').where({
+    juan.select('*').from('users').where({
         id: id //tambien puedo poner directamente ({id}) por la propiedad y el valor es el mismo
     }).then(user => {
         if(user.length) {
