@@ -30,32 +30,7 @@ app.use(express.json());
 app.use(cors());
 
 
-//creo una database porque todavia no hice la base de datos real
-// const database = {
-//     users: [{
-//         id: "123",
-//         name: "juan",
-//         password: "queso",
-//         email: "juan@gmail.com",
-//         entries: 0,
-//         joined: new Date()
-//     },
-//     {
-//         id: "124",
-//         name:"sally",
-//         password:"bananas",
-//         email:"sally@gmail.com",
-//         entries: "0",
-//         joined: new Date()
-//     }],
-//     login: [
-//         {
-//             id: '987',
-//             hash: '',
-//             email: 'juan@gmail.com'
-//         }
-//     ]
-// }
+
 //root route////////////////////////////////////////////////////
 
 app.get('/', (req, res) => {res.send('it is working')})
@@ -82,12 +57,3 @@ app.listen(process.env.PORT || 3001, ()=> {
 });
 
 
-/*
-
-/ ---> res= this is working
-/ signin --> POST(para que la contraseña este oculta)   = success o FAIL
-/register --> POST  = NewUser
-/profile/: userId --> GET = user
-/image --> PUT  --> user updated (para el rank - cada vez que use la app suma 1)
-
-*/
