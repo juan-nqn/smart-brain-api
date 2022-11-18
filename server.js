@@ -14,7 +14,7 @@ const postgres = knex ({
       host : 'oregon-postgres.render.com',
       port : 5432,
       user : 'juan',
-      password : 'mXI4Vl80Wi2z4gvee064SkX8Z9jFgoVZ',
+      password : process.env.DB_PASSWORD,
       database : 'smartbrain_ytzt',
       ssl:true
     }
